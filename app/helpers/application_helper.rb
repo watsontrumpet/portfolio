@@ -15,4 +15,9 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    WatsonViewTool::Renderer.copyright 'Brian Watson', 'All Rights Reserved'
+  end
+
 end
